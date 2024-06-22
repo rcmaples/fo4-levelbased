@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SPECIAL / Perk Build Calculator &amp; Planner - Fallout 4</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A tool to help you plan your character. Calculates starting hit points, carry weight and available perks." />
+    <link href="/source/css/bootstrap.css" rel="stylesheet" />
+    <link href="/source/css/special.css" rel="stylesheet" />
+    <link href="/source/css/guide.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container" style="min-height: 900px">
+      <div class="special-calculator">
+        <div class="page-header">
+          <h1>Fallout 4 - SPECIAL / Build Calculator</h1>
+        </div>
+
+        <div class="row row-offcanvas row-offcanvas-right">
+          <div class="col-md-10">
+            <p class="visible-xs visible-sm">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="offcanvas">
+                Fallout 4 Guide - Table of Contents
+              </button>
+            </p>
+
+            <p>
+              You can place 21 stat points when creating a character. However
+              everytime you level up you can choose between placing another stat
+              or choosing a perk.
+              <strong
+                >Note you can save your build by bookmarking the URL with your
+                choices.</strong
+              >
+            </p>
+
+            <div class="col-sm-6 col-xs-12">
+              <table class="special table table-hover">
+                <tbody>
+                  <tr data-special="s">
+                    <th>Strength</th>
+                    <td>
+                      <a href="#" class="sub-special" data-special="s">
+                        <span class="glyphicon glyphicon-minus"></span>
+                      </a>
+                    </td>
+                    <td class="special-value" data-special="s"></td>
+                    <td>
+                      <a href="#" class="add-special" data-special="s">
+                        <span class="glyphicon glyphicon-plus"></span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr data-special="p">
+                    <th>Perception</th>
+                    <td>
+                      <a href="#" class="sub-special" data-special="p">
+                        <span class="glyphicon glyphicon-minus"></span>
+                      </a>
+                    </td>
+                    <td class="special-value" data-special="p"></td>
+                    <td>
+                      <a href="#" class="add-special" data-special="p">
+                        <span class="glyphicon glyphicon-plus"></span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr data-special="e">
+                    <th>Endurance</th>
+                    <td>
+                      <a href="#" class="sub-special" data-special="e">
+                        <span class="glyphicon glyphicon-minus"></span>
+                      </a>
+                    </td>
+                    <td class="special-value" data-special="e"></td>
+                    <td>
+                      <a href="#" class="add-special" data-special="e">
+                        <span class="glyphicon glyphicon-plus"></span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr data-special="c">
+                    <th>Charisma</th>
+                    <td>
+                      <a href="#" class="sub-special" data-special="c">
+                        <span class="glyphicon glyphicon-minus"></span>
+                      </a>
+                    </td>
+                    <td class="special-value" data-special="c"></td>
+                    <td>
+                      <a href="#" class="add-special" data-special="c">
+                        <span class="glyphicon glyphicon-plus"></span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr data-special="i">
+                    <th>Intelligence</th>
+                    <td>
+                      <a href="#" class="sub-special" data-special="i">
+                        <span class="glyphicon glyphicon-minus"></span>
+                      </a>
+                    </td>
+                    <td class="special-value" data-special="i"></td>
+                    <td>
+                      <a href="#" class="add-special" data-special="i">
+                        <span class="glyphicon glyphicon-plus"></span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr data-special="a">
+                    <th>Agility</th>
+                    <td>
+                      <a href="#" class="sub-special" data-special="a">
+                        <span class="glyphicon glyphicon-minus"></span>
+                      </a>
+                    </td>
+                    <td class="special-value" data-special="a"></td>
+                    <td>
+                      <a href="#" class="add-special" data-special="a">
+                        <span class="glyphicon glyphicon-plus"></span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr data-special="l">
+                    <th>Luck</th>
+                    <td>
+                      <a href="#" class="sub-special" data-special="l">
+                        <span class="glyphicon glyphicon-minus"></span>
+                      </a>
+                    </td>
+                    <td class="special-value" data-special="l"></td>
+                    <td>
+                      <a href="#" class="add-special" data-special="l">
+                        <span class="glyphicon glyphicon-plus"></span>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="requirements clearfix">
+                <div class="reset">
+                  <a href="#" class="reset-special">Reset</a>
+                </div>
+
+                <span class="creation-points-remaining">
+                  <span class="creation-points-remaining-value"></span>
+                  points remaining for creation
+                </span>
+                <span class="minimum-level">
+                  Requires level <span class="minimum-level-value"></span> or
+                  higher
+                </span>
+              </div>
+            </div>
+            <div class="special-desc col-sm-6 hidden-xs">
+              <div class="special-desc-image">
+                <img src="/source/images/strength.png" />
+              </div>
+              <p>
+                Strength is a measure of your raw physical power. It affects how
+                much you can carry, and the damage of all melee attacks.
+              </p>
+            </div>
+
+            <h3 class="text-center">Derived Stats</h3>
+
+            <table class="derived-stats table">
+              <thead>
+                <tr>
+                  <th>Hit Points</th>
+                  <th>Action Points</th>
+                  <th>Carry Weight</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="hp-value"></td>
+                  <td class="ap-value"></td>
+                  <td class="cw-value"></td>
+                </tr>
+              </tbody>
+            </table>
+            <h3 class="text-center">Available Perks</h3>
+            <p class="text-center">
+              Below you can choose perks and ranks for you build with the
+              <span class="glyphicon glyphicon-minus black"></span> and
+              <span class="glyphicon glyphicon-plus black"></span> buttons
+              (mouse over a perk.) Note only perks highlighted by your SPECIAL
+              choices can be picked. In addition mousing over a perks name will
+              show its effect and ranks.
+              <span class="hidden-xs">
+                Clicking a perk will open a page with more information in a new
+                tab.
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-2">
+            <div style="width: auto; height: auto">
+              <style>
+                .LevelBased-GuideSkyscraper {
+                  width: 300px;
+                  height: 250px;
+                }
+                @media (min-width: 769px) {
+                  .LevelBased-GuideSkyscraper {
+                    width: 300px;
+                    height: 250px;
+                  }
+                }
+                @media (min-width: 993px) {
+                  .LevelBased-GuideSkyscraper {
+                    width: 160px;
+                    height: 600px;
+                  }
+                }
+              </style>
+            </div>
+          </div>
+
+          <div class="col-md-10">
+            <div class="table-responsive parag">
+              <table class="perks table table-hover">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Strength</th>
+                    <th>Perception</th>
+                    <th>Endurance</th>
+                    <th>Charisma</th>
+                    <th>Intelligence</th>
+                    <th>Agility</th>
+                    <th>Luck</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td class="perk" data-perk="s1">
+                      <a class="perk-name" target="_blank" data-perk="s1"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="s1">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="s1"></span>
+                        <a href="#" class="add-perk" data-perk="s1">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="p1">
+                      <a class="perk-name" target="_blank" data-perk="p1"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="p1">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="p1"></span>
+                        <a href="#" class="add-perk" data-perk="p1">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="e1">
+                      <a class="perk-name" target="_blank" data-perk="e1"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="e1">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="e1"></span>
+                        <a href="#" class="add-perk" data-perk="e1">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="c1">
+                      <a class="perk-name" target="_blank" data-perk="c1"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="c1">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="c1"></span>
+                        <a href="#" class="add-perk" data-perk="c1">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="i1">
+                      <a class="perk-name" target="_blank" data-perk="i1"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="i1">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="i1"></span>
+                        <a href="#" class="add-perk" data-perk="i1">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="a1">
+                      <a class="perk-name" target="_blank" data-perk="a1"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="a1">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="a1"></span>
+                        <a href="#" class="add-perk" data-perk="a1">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="l1">
+                      <a class="perk-name" target="_blank" data-perk="l1"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="l1">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="l1"></span>
+                        <a href="#" class="add-perk" data-perk="l1">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td class="perk" data-perk="s2">
+                      <a class="perk-name" target="_blank" data-perk="s2"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="s2">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="s2"></span>
+                        <a href="#" class="add-perk" data-perk="s2">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="p2">
+                      <a class="perk-name" target="_blank" data-perk="p2"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="p2">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="p2"></span>
+                        <a href="#" class="add-perk" data-perk="p2">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="e2">
+                      <a class="perk-name" target="_blank" data-perk="e2"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="e2">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="e2"></span>
+                        <a href="#" class="add-perk" data-perk="e2">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="c2">
+                      <a class="perk-name" target="_blank" data-perk="c2"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="c2">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="c2"></span>
+                        <a href="#" class="add-perk" data-perk="c2">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="i2">
+                      <a class="perk-name" target="_blank" data-perk="i2"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="i2">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="i2"></span>
+                        <a href="#" class="add-perk" data-perk="i2">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="a2">
+                      <a class="perk-name" target="_blank" data-perk="a2"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="a2">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="a2"></span>
+                        <a href="#" class="add-perk" data-perk="a2">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="l2">
+                      <a class="perk-name" target="_blank" data-perk="l2"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="l2">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="l2"></span>
+                        <a href="#" class="add-perk" data-perk="l2">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td class="perk" data-perk="s3">
+                      <a class="perk-name" target="_blank" data-perk="s3"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="s3">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="s3"></span>
+                        <a href="#" class="add-perk" data-perk="s3">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="p3">
+                      <a class="perk-name" target="_blank" data-perk="p3"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="p3">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="p3"></span>
+                        <a href="#" class="add-perk" data-perk="p3">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="e3">
+                      <a class="perk-name" target="_blank" data-perk="e3"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="e3">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="e3"></span>
+                        <a href="#" class="add-perk" data-perk="e3">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="c3">
+                      <a class="perk-name" target="_blank" data-perk="c3"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="c3">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="c3"></span>
+                        <a href="#" class="add-perk" data-perk="c3">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="i3">
+                      <a class="perk-name" target="_blank" data-perk="i3"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="i3">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="i3"></span>
+                        <a href="#" class="add-perk" data-perk="i3">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="a3">
+                      <a class="perk-name" target="_blank" data-perk="a3"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="a3">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="a3"></span>
+                        <a href="#" class="add-perk" data-perk="a3">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="l3">
+                      <a class="perk-name" target="_blank" data-perk="l3"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="l3">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="l3"></span>
+                        <a href="#" class="add-perk" data-perk="l3">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                    <td class="perk" data-perk="s4">
+                      <a class="perk-name" target="_blank" data-perk="s4"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="s4">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="s4"></span>
+                        <a href="#" class="add-perk" data-perk="s4">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="p4">
+                      <a class="perk-name" target="_blank" data-perk="p4"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="p4">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="p4"></span>
+                        <a href="#" class="add-perk" data-perk="p4">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="e4">
+                      <a class="perk-name" target="_blank" data-perk="e4"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="e4">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="e4"></span>
+                        <a href="#" class="add-perk" data-perk="e4">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="c4">
+                      <a class="perk-name" target="_blank" data-perk="c4"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="c4">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="c4"></span>
+                        <a href="#" class="add-perk" data-perk="c4">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="i4">
+                      <a class="perk-name" target="_blank" data-perk="i4"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="i4">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="i4"></span>
+                        <a href="#" class="add-perk" data-perk="i4">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="a4">
+                      <a class="perk-name" target="_blank" data-perk="a4"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="a4">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="a4"></span>
+                        <a href="#" class="add-perk" data-perk="a4">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="l4">
+                      <a class="perk-name" target="_blank" data-perk="l4"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="l4">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="l4"></span>
+                        <a href="#" class="add-perk" data-perk="l4">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>5</th>
+                    <td class="perk" data-perk="s5">
+                      <a class="perk-name" target="_blank" data-perk="s5"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="s5">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="s5"></span>
+                        <a href="#" class="add-perk" data-perk="s5">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="p5">
+                      <a class="perk-name" target="_blank" data-perk="p5"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="p5">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="p5"></span>
+                        <a href="#" class="add-perk" data-perk="p5">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="e5">
+                      <a class="perk-name" target="_blank" data-perk="e5"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="e5">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="e5"></span>
+                        <a href="#" class="add-perk" data-perk="e5">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="c5">
+                      <a class="perk-name" target="_blank" data-perk="c5"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="c5">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="c5"></span>
+                        <a href="#" class="add-perk" data-perk="c5">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="i5">
+                      <a class="perk-name" target="_blank" data-perk="i5"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="i5">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="i5"></span>
+                        <a href="#" class="add-perk" data-perk="i5">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="a5">
+                      <a class="perk-name" target="_blank" data-perk="a5"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="a5">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="a5"></span>
+                        <a href="#" class="add-perk" data-perk="a5">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="l5">
+                      <a class="perk-name" target="_blank" data-perk="l5"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="l5">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="l5"></span>
+                        <a href="#" class="add-perk" data-perk="l5">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>6</th>
+                    <td class="perk" data-perk="s6">
+                      <a class="perk-name" target="_blank" data-perk="s6"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="s6">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="s6"></span>
+                        <a href="#" class="add-perk" data-perk="s6">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="p6">
+                      <a class="perk-name" target="_blank" data-perk="p6"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="p6">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="p6"></span>
+                        <a href="#" class="add-perk" data-perk="p6">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="e6">
+                      <a class="perk-name" target="_blank" data-perk="e6"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="e6">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="e6"></span>
+                        <a href="#" class="add-perk" data-perk="e6">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="c6">
+                      <a class="perk-name" target="_blank" data-perk="c6"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="c6">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="c6"></span>
+                        <a href="#" class="add-perk" data-perk="c6">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="i6">
+                      <a class="perk-name" target="_blank" data-perk="i6"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="i6">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="i6"></span>
+                        <a href="#" class="add-perk" data-perk="i6">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="a6">
+                      <a class="perk-name" target="_blank" data-perk="a6"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="a6">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="a6"></span>
+                        <a href="#" class="add-perk" data-perk="a6">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="l6">
+                      <a class="perk-name" target="_blank" data-perk="l6"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="l6">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="l6"></span>
+                        <a href="#" class="add-perk" data-perk="l6">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>7</th>
+                    <td class="perk" data-perk="s7">
+                      <a class="perk-name" target="_blank" data-perk="s7"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="s7">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="s7"></span>
+                        <a href="#" class="add-perk" data-perk="s7">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="p7">
+                      <a class="perk-name" target="_blank" data-perk="p7"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="p7">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="p7"></span>
+                        <a href="#" class="add-perk" data-perk="p7">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="e7">
+                      <a class="perk-name" target="_blank" data-perk="e7"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="e7">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="e7"></span>
+                        <a href="#" class="add-perk" data-perk="e7">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="c7">
+                      <a class="perk-name" target="_blank" data-perk="c7"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="c7">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="c7"></span>
+                        <a href="#" class="add-perk" data-perk="c7">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="i7">
+                      <a class="perk-name" target="_blank" data-perk="i7"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="i7">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="i7"></span>
+                        <a href="#" class="add-perk" data-perk="i7">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="a7">
+                      <a class="perk-name" target="_blank" data-perk="a7"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="a7">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="a7"></span>
+                        <a href="#" class="add-perk" data-perk="a7">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="l7">
+                      <a class="perk-name" target="_blank" data-perk="l7"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="l7">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="l7"></span>
+                        <a href="#" class="add-perk" data-perk="l7">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>8</th>
+                    <td class="perk" data-perk="s8">
+                      <a class="perk-name" target="_blank" data-perk="s8"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="s8">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="s8"></span>
+                        <a href="#" class="add-perk" data-perk="s8">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="p8">
+                      <a class="perk-name" target="_blank" data-perk="p8"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="p8">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="p8"></span>
+                        <a href="#" class="add-perk" data-perk="p8">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="e8">
+                      <a class="perk-name" target="_blank" data-perk="e8"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="e8">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="e8"></span>
+                        <a href="#" class="add-perk" data-perk="e8">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="c8">
+                      <a class="perk-name" target="_blank" data-perk="c8"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="c8">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="c8"></span>
+                        <a href="#" class="add-perk" data-perk="c8">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="i8">
+                      <a class="perk-name" target="_blank" data-perk="i8"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="i8">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="i8"></span>
+                        <a href="#" class="add-perk" data-perk="i8">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="a8">
+                      <a class="perk-name" target="_blank" data-perk="a8"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="a8">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="a8"></span>
+                        <a href="#" class="add-perk" data-perk="a8">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="l8">
+                      <a class="perk-name" target="_blank" data-perk="l8"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="l8">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="l8"></span>
+                        <a href="#" class="add-perk" data-perk="l8">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>9</th>
+                    <td class="perk" data-perk="s9">
+                      <a class="perk-name" target="_blank" data-perk="s9"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="s9">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="s9"></span>
+                        <a href="#" class="add-perk" data-perk="s9">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="p9">
+                      <a class="perk-name" target="_blank" data-perk="p9"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="p9">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="p9"></span>
+                        <a href="#" class="add-perk" data-perk="p9">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="e9">
+                      <a class="perk-name" target="_blank" data-perk="e9"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="e9">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="e9"></span>
+                        <a href="#" class="add-perk" data-perk="e9">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="c9">
+                      <a class="perk-name" target="_blank" data-perk="c9"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="c9">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="c9"></span>
+                        <a href="#" class="add-perk" data-perk="c9">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="i9">
+                      <a class="perk-name" target="_blank" data-perk="i9"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="i9">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="i9"></span>
+                        <a href="#" class="add-perk" data-perk="i9">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="a9">
+                      <a class="perk-name" target="_blank" data-perk="a9"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="a9">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="a9"></span>
+                        <a href="#" class="add-perk" data-perk="a9">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="l9">
+                      <a class="perk-name" target="_blank" data-perk="l9"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="l9">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="l9"></span>
+                        <a href="#" class="add-perk" data-perk="l9">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>10</th>
+                    <td class="perk" data-perk="s10">
+                      <a class="perk-name" target="_blank" data-perk="s10"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="s10">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="s10"></span>
+                        <a href="#" class="add-perk" data-perk="s10">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="p10">
+                      <a class="perk-name" target="_blank" data-perk="p10"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="p10">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="p10"></span>
+                        <a href="#" class="add-perk" data-perk="p10">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="e10">
+                      <a class="perk-name" target="_blank" data-perk="e10"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="e10">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="e10"></span>
+                        <a href="#" class="add-perk" data-perk="e10">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="c10">
+                      <a class="perk-name" target="_blank" data-perk="c10"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="c10">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="c10"></span>
+                        <a href="#" class="add-perk" data-perk="c10">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="i10">
+                      <a class="perk-name" target="_blank" data-perk="i10"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="i10">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="i10"></span>
+                        <a href="#" class="add-perk" data-perk="i10">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="a10">
+                      <a class="perk-name" target="_blank" data-perk="a10"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="a10">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="a10"></span>
+                        <a href="#" class="add-perk" data-perk="a10">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                    <td class="perk" data-perk="l10">
+                      <a class="perk-name" target="_blank" data-perk="l10"></a>
+                      <div class="perk-links">
+                        <a href="#" class="sub-perk" data-perk="l10">
+                          <span class="glyphicon glyphicon-minus black"></span>
+                        </a>
+                        <span class="perk-rank" data-perk="l10"></span>
+                        <a href="#" class="add-perk" data-perk="l10">
+                          <span class="glyphicon glyphicon-plus black"></span>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/source/scripts/jquery.min.js"></script>
+    <script src="/source/scripts/bootstrap.js"></script>
+    <script src="/source/scripts/respond.js"></script>
+    <script src="/source/scripts/special-calculator.js"></script>
+
+    <script>
+      var specialDesc = {
+        s: {
+          img: '/source/images/strength.png',
+          desc: 'Strength is a measure of your raw physical power. It affects how much you can carry, and the damage of all melee attacks.',
+        },
+        p: {
+          img: '/source/images/perception.png',
+          desc: 'Perception is your environmental awareness and "sixth sense," and affects weapon accuracy in V.A.T.S.',
+        },
+        e: {
+          img: '/source/images/endurance.png',
+          desc: 'Endurance is a measure of your overall physical fitness. It affects your total health and the Action Point drain from sprinting.',
+        },
+        c: {
+          img: '/source/images/charisma.png',
+          desc: 'Charisma is your ability to charm and convince others. It affects your success to persuade in dialogue and prices when you barter.',
+        },
+        i: {
+          img: '/source/images/intelligence.png',
+          desc: 'Intelligence is a measure of your overall mental acuity, and effects the number of Experience Points earned.',
+        },
+        a: {
+          img: '/source/images/agility.png',
+          desc: 'Agility is a measure of your overall finesse and reflexes. It affects the number of Action Points in V.A.T.S and your ability to sneak.',
+        },
+        l: {
+          img: '/source/images/luck.png',
+          desc: 'Luck is a measure of your general good fortune, and effects the recharge rate of Critical Hits.',
+        },
+      };
+
+      $('.special tr').on('mouseover', function () {
+        var specialType = $(this).data('special');
+        var desc = specialDesc[specialType];
+        $('.special-desc img').attr('src', desc.img);
+        $('.special-desc p').text(desc.desc);
+      });
+
+      $('#shareBuildDialog').on('shown.bs.modal', function () {
+        $('#buildUrl').focus().select();
+      });
+    </script>
+
+    <script>
+      $('#shareBuildDialog').on('show.bs.modal', function (event) {
+        var link = $(event.relatedTarget);
+        var url = link.attr('href');
+        $('#build-url').val(url);
+      });
+    </script>
+  </body>
+</html>

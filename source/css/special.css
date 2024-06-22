@@ -1,0 +1,79 @@
+@media (max-width: 767px) {
+  .page-header {
+    font-size: 24px;
+  }
+}
+
+a.disabled {
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.perk .tooltip-inner {
+  text-align: left;
+}
+
+.perk .tooltip-inner li + li {
+  margin-top: 10px;
+}
+
+.build-link-container {
+  float: right;
+}
+
+.special td {
+  width: 50px;
+  text-align: center;
+}
+
+.requirements {
+  margin-bottom: 20px;
+}
+
+.reset {
+  float: right;
+  width: 150px;
+  text-align: center;
+}
+
+.special-desc-image {
+  text-align: center;
+}
+
+.derived-stats {
+  width: 100%;
+}
+
+.black,
+.black a {
+  color: #000000;
+}
+
+.derived-stats th,
+.derived-stats td {
+  width: 33%;
+  text-align: center;
+}
+
+.perks th,
+.perks td {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .perk-links a {
+    visibility: hidden;
+  }
+}
+
+.perk-links .col-xs-4 {
+  text-align: center;
+}
+
+.perk-links a {
+  margin: 0 5px;
+}
+
+.perk:hover .perk-links a {
+  visibility: visible;
+}

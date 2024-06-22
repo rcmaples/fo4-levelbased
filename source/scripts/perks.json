@@ -1,0 +1,679 @@
+{
+  "s": {
+    "1": {
+      "name": "Iron Fist",
+      "ranks": {
+        "1": { "level": 1, "description": "Channel your Chi to unleash devastating fury! Punching attacks do <strong>20%</strong> more damage to your opponent." },
+        "2": { "level": 9, "description": "Punching attacks now do <strong>40%</strong> more damage and can disarm your opponent. <strong>(Requires: Level 9)" },
+        "3": { "level": 18, "description": "Punching attacks now do <strong>60%</strong> more damage. Unarmed Power Attacks have a chance to cripple one of your opponent's limbs. <strong>(Requires: Level 18)" },
+        "4": { "level": 31, "description": "Punching attacks now do <strong>80%</strong> more damage. Unarmed Power Attacks have an increased chance to cripple one of your opponent's limbs. <strong>(Requires: Level 31)</strong> " },
+        "5": { "level": 46, "description": "Punching attacks now do <strong>double</strong> damage. Criticals in V.A.T.S will paralyze your opponent. <strong>(Requires: Level 46)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/419-iron-fist/"
+    },
+    "2": {
+      "name": "Big Leagues",
+      "ranks": {
+        "1": { "level": 1, "description": "Swing for the fences! Do <strong>20%</strong> more melee weapon damage." },
+        "2": { "level": 7, "description": "You now do <strong>40%</strong> more melee weapon damage and gain a chance to disarm your opponent. <strong>(Requires: Level 7)</strong>" },
+        "3": { "level": 15, "description": "You now do <strong>60%</strong> more melee weapon damage and gain an increased chance to disarm your opponent. <strong>(Requires: Level 15)</strong>" },
+        "4": { "level": 27, "description": "You now do <strong>80%</strong> more melee weapon damage and hit all targets in front of you. <strong>(Requires: Level 27)</strong>" },
+        "5": { "level": 42, "description": "You now do <strong>double</strong> damage with a melee weapon, and gain a chance to cripple your opponent, or grand slam their head clean off! <strong>(Requires: Level 42)" }
+      },
+      "url": "/guides/fallout-4/perks/384-big-leagues/"
+    },
+    "3": {
+      "name": "Armorer",
+      "ranks": {
+        "1": { "level": 1, "description": "Protect yourself from the dangers of the Wasteland with access to base level and Rank 1 armor mods." },
+        "2": { "level": 13, "description": "You gain access to Rank 2 armor mods. <strong>(Requires: Level 13)</strong> " },
+        "3": { "level": 25, "description": "You gain access to Rank 3 armor mods. <strong>(Requires: Level 25)</strong>" },
+        "4": { "level": 39, "description": "You gain access to Rank 4 armor mods. <strong>(Requires: Level 39)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/377-armorer/"
+    },
+    "4": {
+      "name": "Blacksmith",
+      "ranks": {
+        "1": { "level": 1, "description": "Fire up the forge and gain access to base level and Rank 1 melee weapon mods." },
+        "2": { "level": 16, "description": "You gain access to Rank 2 melee weapon mods. <strong>(Requires: Level 16)</strong>" },
+        "3": { "level": 29, "description": "You gain access to Rank 3 melee weapon mods. <strong>(Requires: Level 29)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/385-blacksmith/"
+    },
+    "5": {
+      "name": "Heavy Gunner",
+      "ranks": {
+        "1": { "level": 1, "description": "Thanks to practice and conditioning, heavy guns do <strong>20%</strong> more damage." },
+        "2": { "level": 11, "description": "Heavy guns now do <strong>40%</strong> more damage, and have improved hip fire accuracy. <strong>(Requires: Level 11)</strong>" },
+        "3": { "level": 21, "description": "Heavy guns now do <strong>60%</strong> more damage. Hip fire accuracy is increased even more. <strong>(Requires: Level 21)</strong>" },
+        "4": { "level": 35, "description": "Heavy guns now do <strong>80%</strong> more damage and have a chance to stagger your opponent. <strong>(Requires: Level 35)</strong>" },
+        "5": { "level": 47, "description": "Heavy guns now do <strong>double</strong> damage. <strong>(Requires: Level 47)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/413-heavy-gunner/"
+    },
+    "6": {
+      "name": "Strong Back",
+      "ranks": {
+        "1": { "level": 1, "description": "What are you, part pack mule? Gain <strong>+25</strong> to carry weight." },
+        "2": { "level": 10, "description": "You now have <strong>+50</strong> to carry weight. <strong>(Requires: Level 10)</strong>" },
+        "3": { "level": 20, "description": "When over encumbered you can use Action Points to run. <strong>(Requires: Level 20)</strong>" },
+        "4": { "level": 30, "description": "When over encumbered you can fast travel. <strong>(Requires: Level 30)</strong>" },
+        "5": { "level": 40, "description": "While over-encumbered, running costs <strong>50%</strong> fewer action points. <strong>(Requires: Level 40)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/466-strong-back/"
+    },
+    "7": {
+      "name": "Steady Aim",
+      "ranks": {
+        "1": { "level": 1, "description": "Stay on target! Hip fire accuracy is improved when firing any gun" },
+        "2": { "level": 28, "description": "Hip fire accuracy is improved even more when firing any gun. <Strong>(Requires: Level 28)</strong>" },
+        "3": { "level": 49, "description": "Hip fire damage is improved by 5% firing any gun. <Strong>(Requires: Level 49)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/465-steady-aim/"
+    },
+    "8": {
+      "name": "Basher",
+      "ranks": {
+        "1": { "level": 1, "description": "Get up close and personal! Gun bashing does <strong>25%</strong> more damage." },
+        "2": { "level": 5, "description": "Gun bashing now does <strong>50%</strong> more damage and possibly cripples your opponent. <strong>(Requires: Level 5)</strong>" },
+        "3": { "level": 14, "description": "Gun bashing now does <strong>75%</strong> more damage and has an increased chance to cripple your opponent. <strong>(Requires: Level 14)</strong>" },
+        "4": { "level": 26, "description": "Gun bashing does <strong>double</strong> damage and has an increased chance to cripple your opponent. It may also inflict a Critical Hit. <strong>(Requires: Level 26)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/381-basher/"
+    },
+    "9": {
+      "name": "Rooted",
+      "ranks": {
+        "1": { "level": 1, "description": "You're part tree! While standing still, you gain <strong>+25</strong> Damage Resistance and your melee and unarmed attacks deal <strong>25%</strong> more damage." },
+        "2": { "level": 22, "description": "While standing still, you now gain <strong>+50</strong> Damage Resistance and your melee and unarmed attacks deal <strong>50%</strong> more damage. <strong>(Requires: Level 22)</strong>" },
+        "3": { "level": 43, "description": "While standing still, you may automatically disarm enemies that use melee weapons against you. <strong>(Requires: Level 43)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/456-rooted/"
+    },
+    "10": {
+      "name": "Pain Train",
+      "ranks": {
+        "1": { "level": 1, "description": "Choo Choo! All aboard! While wearing Power Armor, sprinting into enemies hurts and staggers them. Robots and over sized enemies are immune." },
+        "2": { "level": 24, "description": "Sprinting into enemies while wearing Power Armor now causes severe damage and a more powerful stagger. Robots and over sized enemies are immune. <strong>(Requires: Level 24)</strong>" },
+        "3": { "level": 50, "description": "Sprinting into enemies while wearing Power Armor now causes massive damage and knocks them down. Impact Landing near enemies from heights causes a more powerful area-of-effect Power Slam.<strong>(Requires: Level 50)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/443-pain-train/"
+    }
+  },
+  "p": {
+    "1": {
+      "name": "Pickpocket",
+      "ranks": {
+        "1": { "level": 1, "description": "Your quick hands and sticky fingers make picking pockets <strong>25%</strong> easier." },
+        "2": { "level": 6, "description": "Picking pockets is now <strong>50%</strong> easier. You can place a live grenade in a person's inventory. <strong>(Requires: Level 6)</strong>" },
+        "3": { "level": 17, "description": "Picking pockets is now <strong>75%</strong> easier, and you can steal equipped weapons. <strong>(Requires: Level 17)</strong>" },
+        "4": { "level": 31, "description": "Picking pockets is now <strong>twice</strong> as easy, and you can steal equipped items. <strong>(Requires: Level 31)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/447-pickpocket/"
+    },
+    "2": {
+      "name": "Rifleman",
+      "ranks": {
+        "1": { "level": 1, "description": "Keep your distance long and your kill count high. Attacks with non-automatic rifles do <strong>20%</strong> more damage." },
+        "2": { "level": 9, "description": "Attacks with non-automatic rifles do <strong>40%</strong> more damage and ignore <strong>15%</strong> of a target's armor. <strong>(Requires: Level 9)</strong>" },
+        "3": { "level": 18, "description": "Attacks with non-automatic rifles do <strong>60%</strong> more damage and ignore <strong>20%</strong> of a target's armor. <strong>(Requires: Level 18)</strong>" },
+        "4": { "level": 31, "description": "Attacks with non-automatic rifles do <strong>80%</strong> more damage and ignore <strong>25%</strong> of a target's armor. They also have a slight chance of crippling a limb. <strong>(Requires: Level 31)</strong>" },
+        "5": { "level": 46, "description": "Attacks with non-automatic rifles do <strong>double</strong> damage and ignore <strong>30%</strong> of a target's armor. They also have a slightly higher chance of crippling a limb. <strong>(Requires: Level 46)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/452-rifleman/"
+    },
+    "3": {
+      "name": "Awareness",
+      "ranks": {
+        "1": { "level": 1, "description": "To defeat your enemies, know their weaknesses! You can view a target's specific damage resistances in V.A.T.S." },
+        "2": { "level": 14, "description": "Increases hit chance and damage in V.A.T.S by 5% <strong>(Requires: Level 14)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/380-awareness/"
+    },
+    "4": {
+      "name": "Locksmith",
+      "ranks": {
+        "1": { "level": 1, "description": "Your nimble fingers allow you to pick <strong>Advanced</strong> locks." },
+        "2": { "level": 7, "description": "You can pick <strong>Expert</strong> locks. <strong>(Requires: Level 7)</strong>" },
+        "3": { "level": 18, "description": "You can pick <strong>Master</strong> locks. <strong>(Requires: Level 18)</strong>" },
+        "4": { "level": 41, "description": "Your bobby pins never break during lockpicking. <strong>(Requires: Level 41)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/431-locksmith/"
+    },
+    "5": {
+      "name": "Demolition Expert",
+      "ranks": {
+        "1": { "level": 1, "description": "The bigger the boom, the better! Your explosives do <strong>25%</strong> more damage, and you can craft explosives at any Chemistry Station." },
+        "2": { "level": 10, "description": "Your explosives do <strong>50%</strong> more damage, and grenades gain a throwing arc. <strong>(Requires: Level 10)</strong>" },
+        "3": { "level": 22, "description": "Your explosives do <strong>75%</strong> more damage and affect a larger area. <strong>(Requires: Level 22)</strong>" },
+        "4": { "level": 34, "description": "Your explosives now do <strong>double</strong> damage. Mines and grenades shot in V.A.T.S explode for <strong>double</strong> damage, too. <strong>(Requires: Level 34)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/400-demolition-expert/"
+    },
+    "6": {
+      "name": "Night Person",
+      "ranks": {
+        "1": { "level": 1, "description": "You are a creature of the night! Gain <strong>+2</strong> to Intelligence and Perception between the hours of <strong>6:00 p.m.</strong> and <strong>6:00 a.m.</strong>" },
+        "2": { "level": 26, "description": "You now have <strong>+3</strong> to Intelligence and Perception between the hours of <strong>6:00 p.m.</strong> and <strong>6:00 a.m.</strong>, and night vision when sneaking. <strong>(Requires: Level 25)</strong>" },
+        "3": { "level": 37, "description": "You have <strong>30</strong> extra health between the hours of <strong>6 PM and 6 AM</strong>. <strong>(Requires: Level 37)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/440-night-person/"
+    },
+    "7": {
+      "name": "Refractor",
+      "ranks": {
+        "1": { "level": 1, "description": "You must be part mirror! Instantly gain <strong>+10</strong> Energy Resistance." },
+        "2": { "level": 11, "description": "You now have <strong>+20</strong> Energy Resistance. <strong>(Requires: Level 11)</strong>" },
+        "3": { "level": 21, "description": "You now have <strong>+30</strong> Energy Resistance. <strong>(Requires: Level 21)</strong>" },
+        "4": { "level": 35, "description": "You now have <strong>+40</strong> Energy Resistance. <strong>(Requires: Level 35)</strong>" },
+        "5": { "level": 42, "description": "You now have <strong>+50</strong> Energy Resistance. <strong>(Requires: Level 42)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/450-refractor/"
+    },
+    "8": {
+      "name": "Sniper",
+      "ranks": {
+        "1": { "level": 1, "description": "It's all about focus. You have improved control and can hold your breath longer when aiming with scopes." },
+        "2": { "level": 13, "description": "Non-automatic, scoped rifles have a chance of knocking down your target. <strong>(Requires: Level 13)</strong>" },
+        "3": { "level": 26, "description": "Non-automatic, scoped rifles gain <strong>+25%</strong> accuracy to head shot in V.A.T.S. <strong>(Requires: Level 26)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/463-sniper/"
+    },
+    "9": {
+      "name": "Penetrator",
+      "ranks": {
+        "1": { "level": 1, "description": "There's no place to hide! In V.A.T.S you can target an enemy's body parts that are blocked by cover, with a decrease in accuracy." },
+        "2": { "level": 28, "description": "In V.A.T.S when you target an enemy's body parts that are blocked by cover, there is no decrease in accuracy. <strong>(Requires: Level 28)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/445-penetrator/"
+    },
+    "10": {
+      "name": "Concentrated Fire",
+      "ranks": {
+        "1": { "level": 1, "description": "Stay Focused! In V.A.T.S every attack on the same body part gains <strong>+10%</strong> accuracy." },
+        "2": { "level": 26, "description": "In V.A.T.S every attack on the same body part gains <strong>+15%</strong> accuracy. <strong>(Requires: Level 26)</strong>" },
+        "3": { "level": 50, "description": "In V.A.T.S every attack on the same body part gains <strong>+20%</strong> accuracy and does <strong>20%</strong> more damage. <strong>(Requires: Level 50) </strong>" }
+      },
+      "url": "/guides/fallout-4/perks/396-concentrated-fire/"
+    }
+  },
+  "e": {
+    "1": {
+      "name": "Toughness",
+      "ranks": {
+        "1": { "level": 1, "description": "If nothing else, you can take a beating! Instantly gain <strong>+10</strong> Damage Resistance" },
+        "2": { "level": 9, "description": "You now have <strong>+20</strong> damage resistance. <strong>(Requires: Level 9)</strong>" },
+        "3": { "level": 18, "description": "You now have <strong>+30</strong> damage resistance. <strong>(Requires: Level 18)</strong>" },
+        "4": { "level": 31, "description": "You now have <strong>+40</strong> damage resistance. <strong>(Requires: Level 31)</strong>" },
+        "5": { "level": 46, "description": "You now have <strong>+50</strong> damage resistance. <strong>(Requires: Level 46)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/472-toughness/"
+    },
+    "2": {
+      "name": "Lead Belly",
+      "ranks": {
+        "1": { "level": 1, "description": "Your digestive tract has adjusted to the weirdness of the Wasteland! Take less radiation from eating or drinking." },
+        "2": { "level": 6, "description": "You take even less radiation from eating or drinking. <strong>(Requires: Level 6)</strong>" },
+        "3": { "level": 17, "description": "You take no radiation from eating or drinking. <strong>(Requires: Level 17)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/426-lead-belly/"
+    },
+    "3": {
+      "name": "Lifegiver",
+      "ranks": {
+        "1": { "level": 1, "description": "You embody wellness! Instantly gain <strong>+20</strong> maximum Health." },
+        "2": { "level": 8, "description": "You instantly gain another <strong>+20</strong> maximum Health. <strong>(Requires: Level 8)</strong>" },
+        "3": { "level": 20, "description": "You instantly gain another <strong>+20</strong> maximum Health, and slowly regenerate lost Health. <strong>(Requires: Level 20)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/428-lifegiver/"
+    },
+    "4": {
+      "name": "Chem Resistant",
+      "ranks": {
+        "1": { "level": 1, "description": "All the rush without the hassle! You're <strong>50%</strong> less likely to get addicted when consuming Chems. " },
+        "2": { "level": 22, "description": "You gain complete immunity to chem addiction. <strong>(Requires: Level 22)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/390-chem-resistant/"
+    },
+    "5": {
+      "name": "Aquaboy",
+      "ranks": {
+        "1": { "level": 1, "description": "Water is your ally. You no longer take radiation damage from swimming, and can breathe underwater." },
+        "2": { "level": 21, "description": "You become totally undetectable while submerged. <strong>(Requires: Level 21)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/376-aquaboy/"
+    },
+    "6": {
+      "name": "Rad Resistant",
+      "ranks": {
+        "1": { "level": 1, "description": "Exposure to the Wasteland has made you more resilient, instantly granting <strong>+10</strong> Radiation Resistance." },
+        "2": { "level": 13, "description": "You now have <strong>+20</strong> Radiation Resistance. <strong>(Requires: Level 13)</strong>" },
+        "3": { "level": 26, "description": "You now have <strong>+30</strong> Radiation Resistance. <strong>(Requires: Level 26)</strong>" },
+        "4": { "level": 35, "description": "You now have <strong>+40</strong> Radiation Resistance. <strong>(Requires: Level 35)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/449-rad-resistant/"
+    },
+    "7": {
+      "name": "Adamantium Skeleton",
+      "ranks": {
+        "1": { "level": 1, "description": "Your skeleton has been infused with indestructible metal, reducing limb damage by <strong>30%</strong>." },
+        "2": { "level": 13, "description": "Your limb damage is now reduced by <strong>60%</strong>. <strong>(Requires: Level 13)</strong>" },
+        "3": { "level": 26, "description": "Your limb damage is completely eliminated. <strong>(Requires: Level 26)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/374-adamantium-skeleton/"
+    },
+    "8": {
+      "name": "Cannibal",
+      "ranks": {
+        "1": { "level": 1, "description": "Feast on mortal flesh to heal your wounds! Eating human corpses restores Health." },
+        "2": { "level": 19, "description": "Eating Ghoul or Super Mutant corpses restores Health. <strong>(Requires: Level 19)</strong>" },
+        "3": { "level": 38, "description": "Eating human, Ghoul or Super Mutant corpses now restores a significant amount of Health. <strong>(Requires: Level 38)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/388-cannibal/"
+    },
+    "9": {
+      "name": "Ghoulish",
+      "ranks": {
+        "1": { "level": 1, "description": "Sure, you're still human - on the outside! Radiation now regenerates your lost Health." },
+        "2": { "level": 24, "description": "Radiation now regenerates even more of your lost Health. <strong>(Requires: Level 24)</strong>" },
+        "3": { "level": 48, "description": "Radiation now regenerates even more of your lost Health, and some Feral Ghouls will randomly become friendly. <strong>(Requires: Level 48)</strong>" },
+        "4": { "level": 49, "description": "Rad damage will now begin to slowly heal, restoring health in the process. <strong>(Requires: Level 49)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/404-ghoulish/"
+    },
+    "10": {
+      "name": "Solar Powered",
+      "ranks": {
+        "1": { "level": 1, "description": "Catch some rays! Gain <strong>+2</strong> to Strength and Edurance between the hours of <strong>6:00a.m.</strong> and <strong>6:00p.m.</strong>" },
+        "2": { "level": 27, "description": "Sunlight slowly heals your radiation damage. <strong>(Requires: Level 27)</strong>" },
+        "3": { "level": 50, "description": "Sunlight slowly regenerates your lost Health. <strong>(Requires: Level 50)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/464-solar-powered/"
+    }
+  },
+  "c": {
+    "1": {
+      "name": "Cap Collector",
+      "ranks": {
+        "1": { "level": 1, "description": "You've mastered the art of the deal! Buying and selling prices at vendors are better." },
+        "2": { "level": 20, "description": "Buying and selling prices of vendors are now much better. <strong>(Requires: Level 20)</strong>" },
+        "3": { "level": 41, "description": "You can now invest a total of <strong>500</strong> caps to raise a store's buying capacity. (Requires: Level 41)" }
+      },
+      "url": "/guides/fallout-4/perks/389-cap-collector/"
+    },
+    "2": {
+      "name": "Lady Killer",
+      "ranks": {
+        "1": { "level": 1, "description": "You're charming... and dangerous. Men/Women suffer <strong>+5%</strong> damage in combat, and are easier to persuade in dialogue." },
+        "2": { "level": 7, "description": "Men/Women now suffer <strong>+10%</strong> damage in combat, and are even easier to persuade in dialogue. They are also easier to pacify with the Intimidation perk. <strong>(Requires: Level 7)</strong>" },
+        "3": { "level": 16, "description": "Men/Women now suffer <strong>+15%</strong> damage in combat, and are much easier to persuade in dialogue. They are now even easier to pacify with the Intimidation perk. <strong>(Requires: Level 16)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/425-lady-killer/"
+    },
+    "3": {
+      "name": "Lone Wanderer",
+      "ranks": {
+        "1": { "level": 1, "description": "Who needs friends, anyway? When adventuring without a companion, you take <strong>15%</strong> less damage and carry weight increases by <strong>50</strong>." },
+        "2": { "level": 17, "description": "When adventuring without a companion, you take <strong>30%</strong> less damage and carry weight increases by <strong>100</strong>. <strong>(Requires: Level 17)</strong>" },
+        "3": { "level": 40, "description": "When adventuring without a companion, you do <strong>25%</strong> more damage. <strong>(Requires: Level 40)</strong>" },
+        "4": { "level": 50, "description": "When adventuring without a companion, you have <strong>25</strong> more action points. <strong>(Requires: Level 50)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/432-lone-wanderer/"
+    },
+    "4": {
+      "name": "Attack Dog",
+      "ranks": {
+        "1": { "level": 1, "description": "Your faithful canine companion can hold an enemy, giving you a greater chance to hit them in V.A.T.S." },
+        "2": { "level": 9, "description": "When your dog holds an enemy, there's a chance he'll cripple the limb he's biting. <strong>(Requires: Level 9)</strong>" },
+        "3": { "level": 25, "description": "When your dog holds an enemy, there's a chance he'll cause them to bleed. <strong>(Requires: Level 25)</strong>" },
+        "4": { "level": 31, "description": "When adventuring with your dog, you take 10% less damage. <strong>(Requires: Level 31)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/379-attack-dog/"
+    },
+    "5": {
+      "name": "Animal Friend",
+      "ranks": {
+        "1": { "level": 1, "description": "Commune with beasts! With your gun, aim at any animal below your level and gain a chance to pacify it." },
+        "2": { "level": 12, "description": "When you successfully pacify an animal, you can incite it to attack. <strong>(Requires: Level 12)</strong>" },
+        "3": { "level": 28, "description": "When you successfully pacify an animal, you can give it specific commands. <strong>(Requires: Level 28)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/375-animal-friend/"
+    },
+    "6": {
+      "name": "Local Leader",
+      "ranks": {
+        "1": { "level": 1, "description": "As the ruler everyone turns to, you are able to establish supply lines between your workshop settlements." },
+        "2": { "level": 14, "description": "You can build stores and workstations at workshop settlements. <strong>(Requires: Level 14)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/430-local-leader/"
+    },
+    "7": {
+      "name": "Party Boy",
+      "ranks": {
+        "1": { "level": 1, "description": "Nobody has a good time like you! There's no chance you'll get addicted to alcohol." },
+        "2": { "level": 15, "description": "The effects of alcohol are doubled. <strong>(Requires: Level 15)</strong>" },
+        "3": { "level": 37, "description": "Your Luck is increased by <strong>3</strong> while you're under the influence of alcohol.<strong> (Requires: Level 37)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/444-party-boy/"
+    },
+    "8": {
+      "name": "Inspirational",
+      "ranks": {
+        "1": { "level": 1, "description": "Because you lead by example, your companion does more damage in combat, and cannot hurt you." },
+        "2": { "level": 19, "description": "Your companion resists more damage in combat, and can't be harmed by your attacks. <strong>(Requires: Level 19)</strong>" },
+        "3": { "level": 43, "description": "Your companion can carry more items. <strong>(Requires: Level 43) </strong>" }
+      },
+      "url": "/guides/fallout-4/perks/417-inspirational/"
+    },
+    "9": {
+      "name": "Wasteland Whisperer",
+      "ranks": {
+        "1": { "level": 1, "description": "Master the post-apocalypse! With your gun, aim at any Wasteland creature below your level and gain a chance to pacify it." },
+        "2": { "level": 21, "description": "When you successfully pacify a creature, you can incite it to attack. <strong>(Requires: Level 21)</strong>" },
+        "3": { "level": 49, "description": "When you successfully pacify a creature, you can give it specific commands. <strong>(Requires: Level 49)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/479-wasteland-whisperer/"
+    },
+    "10": {
+      "name": "Intimidation",
+      "ranks": {
+        "1": { "level": 1, "description": "Time to show everyone who's boss! With your gun, aim at any human opponent below your level and gain a chance to pacify them." },
+        "2": { "level": 23, "description": "When you successfully pacify someone, you can incite them to attack. <strong>(Requires: Level 23)</strong>" },
+        "3": { "level": 50, "description": "When you successfully pacify someone, you can give them specific commands. <strong>(Requires: Level 50)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/418-intimidation/"
+    }
+  },
+  "i": {
+    "1": {
+      "name": "V.A.N.S",
+      "ranks": {
+        "1": { "level": 1, "description": "Let Vault-Tec guide you! The path to your closest quest target is displayed in V.A.T.S." },
+        "2": { "level": 36, "description": "Gain +2 to Perception.  <strong>(Requires: Level 36)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/477-vans/"
+    },
+    "2": {
+      "name": "Medic",
+      "ranks": {
+        "1": { "level": 1, "description": "Is there a doctor in the house? Stimpaks restore <strong>40%</strong> of lost Health, and RadAway removes <strong>40%</strong> of radiation." },
+        "2": { "level": 18, "description": "Stimpaks restore <strong>60%</strong> of lost Health, and RadAway removes <strong>60%</strong> of radiation. <strong>(Requires: Level 18)</strong>" },
+        "3": { "level": 30, "description": "Stimpaks restore <strong>80%</strong> of lost Health, and RadAway removes <strong>80%</strong> of radiation. <strong>(Requires: Level 30)</strong>" },
+        "4": { "level": 46, "description": "Stimpaks and RadAway restore <strong>all</strong> lost health and radiation, and work much more quickly. <strong>(Requires: Level 46)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/435-medic/"
+    },
+    "3": {
+      "name": "Gun Nut",
+      "ranks": {
+        "1": { "level": 1, "description": "You gain access to base level and Rank 1 gun mods." },
+        "2": { "level": 13, "description": "You gain access to Rank 2 gun mods. <strong>(Requires: Level 13)</strong>" },
+        "3": { "level": 25, "description": "You gain access to Rank 3 gun mods.<strong> (Requires: Level 25)</strong>" },
+        "4": { "level": 39, "description": "You gain access to Rank 4 gun mods. <strong>(Requires: Level 39)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/409-gun-nut/"
+    },
+    "4": {
+      "name": "Hacker",
+      "ranks": {
+        "1": { "level": 1, "description": "Knowledge of cutting-edge computer encryption allows you to hack <strong>Advanced</strong> terminals." },
+        "2": { "level": 9, "description": "You can hack <strong>Expert</strong> terminals. <strong>(Requires: Level 9)</strong>" },
+        "3": { "level": 21, "description": "You can hack <strong>Master</strong> terminals. <strong>(Requires: Level 21)</strong>" },
+        "4": { "level": 33, "description": "When hacking, you never get locked out of a terminal when things go wrong. <strong>(Requires: Level 33)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/412-hacker/"
+    },
+    "5": {
+      "name": "Scrapper",
+      "ranks": {
+        "1": { "level": 1, "description": "Waste not, want not! You can salvage uncommon components like screws, aluminum, and copper when scrapping weapons and armor." },
+        "2": { "level": 23, "description": "You can salvage rare components like circuitry, nuclear material, and fiber optics when scrapping weapons and armor. Items with favorited components are highlighted. <strong>(Requires: Level 23)</strong>" },
+        "3": { "level": 40, "description": "You get more from salvaging.<strong>(Requires: Level 40)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/458-scrapper/"
+    },
+    "6": {
+      "name": "Science!",
+      "ranks": {
+        "1": { "level": 1, "description": "Take full advantage of advanced technology with access to base level and Rank 1 high-tech mods." },
+        "2": { "level": 17, "description": "You gain access to Rank 2 high-tech mods. <strong>(Requires: Level 17)</strong>" },
+        "3": { "level": 28, "description": "You gain access to Rank 3 high-tech mods. <strong>(Requires: Level 28)</strong>" },
+        "4": { "level": 41, "description": "You gain access to Rank 4 high-tech mods. <strong>(Requires: Level 41)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/457-science/"
+    },
+    "7": {
+      "name": "Chemist",
+      "ranks": {
+        "1": { "level": 1, "description": "Any chems you take last <strong>50%</strong> longer. Far out." },
+        "2": { "level": 16, "description": "Any chems you take now last twice as long. <strong>(Requires: Level 16)</strong>" },
+        "3": { "level": 32, "description": "Any chems you take now last an additional <strong>150%</strong> longer. <strong>(Requires: Level 32)</strong>" },
+        "4": { "level": 45, "description": "Any chems you take now last an additional <strong>200%</strong> longer. <strong>(Requires: Level 45)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/391-chemist/"
+    },
+    "8": {
+      "name": "Robotics Expert",
+      "ranks": {
+        "1": { "level": 1, "description": "Machines will always serve humans, if you have anything to say about it. Hack a robot, and gain a chance to power it on or off, or initiate a self-destruct. " },
+        "2": { "level": 19, "description": "When you successfully hack a robot, you can incite it to attack. <strong>(Requires: Level 19)</strong>" },
+        "3": { "level": 44, "description": "When you successfully hack a robot, you can give it specific commands. <strong>(Requires: Level 44)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/455-robotics-expert/"
+    },
+    "9": {
+      "name": "Nuclear Physicist",
+      "ranks": {
+        "1": { "level": 1, "description": "You've learned to split the atom... and command it. Radiation weapons do <strong>50%</strong> more damage and Fusion Cores last an extra <strong>25%</strong> longer." },
+        "2": { "level": 14, "description": "Radiation weapons now do <strong>double</strong> damage and Fusion Cores last an extra <strong>50%</strong> longer. <strong>(Requires: Level 14)</strong>" },
+        "3": { "level": 26, "description": "Fusion Cores can be ejected from Power Armor like devastating grenades and Fusion Cores last <strong>twice</strong> as long. <strong>(Requires: Level 26)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/442-nuclear-physicist/"
+    },
+    "10": {
+      "name": "Nerd Rage!",
+      "ranks": {
+        "1": { "level": 1, "description": "Genius. Is. ANGRY! When your Health drops below <strong>20%</strong>, time slows and you gain <strong>+20</strong> Damage resistance and do <strong>20%</strong> more damage while the effect lasts." },
+        "2": { "level": 31, "description": "You now gain <strong>30</strong> more Damage Resistance and do <strong>30%</strong> more damage while Nerd Rage is in effect. <strong>(Requires: Level 31)</strong>" },
+        "3": { "level": 50, "description": "You now gain <strong>40</strong> more Damage Resistance and do <strong>40%</strong> more damage while Nerd Rage is in effect. Kills you make while enraged restore some lost Health. <strong>(Requires: Level 50)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/439-nerd-rage/"
+    }
+  },
+  "a": {
+    "1": {
+      "name": "Gunslinger",
+      "ranks": {
+        "1": { "level": 1, "description": "Channel the spirit of the old west! Non-automatic pistols do <strong>20%</strong> more damage." },
+        "2": { "level": 7, "description": "Non-automatic pistols now do <strong>40%</strong> more damage and have increased range. <strong>(Requires: Level 7)</strong>" },
+        "3": { "level": 15, "description": "Non-automatic pistols now do <strong>60%</strong> more damage and range is increased even further. <strong>(Requires: Level 15)</strong>" },
+        "4": { "level": 27, "description": "Non-automatic pistols now do <strong>80%</strong> more damage and their attacks can disarm opponents. <strong>(Requires: Level 27)</strong>" },
+        "5": { "level": 42, "description": "Non-automatic pistols now do <strong>double</strong> damage. Their attacks have a much better chance to disarm opponents, and may even cripple a limb. <strong>(Requires: Level 42)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/411-gunslinger/"
+    },
+    "2": {
+      "name": "Commando",
+      "ranks": {
+        "1": { "level": 1, "description": "Rigorous combat training means automatic weapons do <strong>20%</strong> more damage." },
+        "2": { "level": 11, "description": "Attacks with automatic weapons do <strong>40%</strong> more damage, with improved hip fire accuracy. <strong>(Requires: Level 11)</strong>" },
+        "3": { "level": 21, "description": "Attacks with automatic weapons do <strong>60%</strong> more damage. Hip fire accuracy is improved even more. <strong>(Requires: Level 21)</strong>" },
+        "4": { "level": 35, "description": "Attacks with automatic weapons do <strong>80%</strong> more damage and gain a chance to stagger opponents. <strong>(Requires: Level 35)</strong>" },
+        "5": { "level": 49, "description": "Your automatic weapons now do <strong>double</strong> damage and have a greater chance to stagger opponents. <strong>(Requires: Level 49)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/395-commando/"
+    },
+    "3": {
+      "name": "Sneak",
+      "ranks": {
+        "1": { "level": 1, "description": "Become whisper, become shadow. You are <strong>20%</strong> harder to detect while sneaking." },
+        "2": { "level": 5, "description": "You are now <strong>30%</strong> harder to detect while sneaking, and no longer trigger floor-based traps. <strong>(Requires: Level 5)</strong>" },
+        "3": { "level": 12, "description": "You are now <strong>40%</strong> harder to detect while sneaking, and no longer trigger enemy mines. <strong>(Requires: Level 12)</strong>" },
+        "4": { "level": 23, "description": "You are now <strong>50%</strong> harder to detect while sneaking, and running no longer adversely affects stealth. <strong>(Requires: Level 23)</strong>" },
+        "5": { "level": 38, "description": "Engaging stealth causes distant enemies to lose you. <strong>(Requires: Level 38)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/462-sneak/"
+    },
+    "4": {
+      "name": "Mister Sandman",
+      "ranks": {
+        "1": { "level": 1, "description": "As an agent of death, you can instantly kill a sleeping person. Your silenced weapons do an additional <strong>15%</strong> sneak attack damage." },
+        "2": { "level": 17, "description": "Your silenced weapons do an additional <strong>30%</strong> sneak attack damage. <strong>(Requires: Level 17)</strong>" },
+        "3": { "level": 30, "description": "Your silenced weapons now do <strong>50%</strong> more sneak attack damage. <strong>(Requires: Level 30)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/436-mister-sandman/"
+    },
+    "5": {
+      "name": "Action Boy",
+      "ranks": {
+        "1": { "level": 1, "description": "There's no time to waste! Action Points regenerate <strong>25%</strong> faster." },
+        "2": { "level": 18, "description": "Your Action Points now regenerate <strong>50%</strong> faster. <strong>(Requires: Level 18)</strong>" },
+        "3": { "level": 38, "description": "Your Action Points now regenerate <strong>75%</strong> faster. <strong>(Requires: Level 38)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/373-action-boy/"
+    },
+    "6": {
+      "name": "Moving Target",
+      "ranks": {
+        "1": { "level": 1, "description": "They can't hurt what they can't hit! Get <strong>25+</strong> Damage Resistance and <strong>25+</strong> Energy Resistance when you're sprinting." },
+        "2": { "level": 24, "description": "You now get <strong>+50</strong> Damage Resistance and <strong>+50</strong> Energy Resistance when you're sprinting. <strong>(Requires: Level 24)</strong>" },
+        "3": { "level": 44, "description": "Sprinting costs <strong>50%</strong> fewer Action Points. <strong>(Requires: Level 44) </strong>" }
+      },
+      "url": "/guides/fallout-4/perks/437-moving-target/"
+    },
+    "7": {
+      "name": "Ninja",
+      "ranks": {
+        "1": { "level": 1, "description": "Trained as a shadow warrior, your ranged sneak attack do <strong>2.5x</strong> normal damage and your melee sneak attacks do <strong>4x</strong> normal damage." },
+        "2": { "level": 16, "description": "Your ranged sneak attacks do <strong>3x</strong> normal damage and your melee sneak attacks do <strong>5x</strong> normal damage.<strong> (Requires: Level 16)</strong>" },
+        "3": { "level": 33, "description": "Your ranged sneak attacks do <strong>3.5x</strong> normal damage and your melee sneak attacks do <strong>10x</strong> normal damage. <strong>(Requires: Level 33)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/441-ninja/"
+    },
+    "8": {
+      "name": "Quick Hands",
+      "ranks": {
+        "1": { "level": 1, "description": "In combat, there's no time to hesitate. You can reload all guns faster." },
+        "2": { "level": 23, "description": "Reloading guns costs no Action Points in V.A.T.S.<strong> (Requires: Level 23)</strong>" },
+        "3": { "level": 40, "description": "You gain 10 additional Action Points. <strong> (Requires: Level 40)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/448-quick-hands/"
+    },
+    "9": {
+      "name": "Blitz",
+      "ranks": {
+        "1": { "level": 1, "description": "Find the gap and make the tackle! V.A.T.S. melee distance is increased significantly." },
+        "2": { "level": 29, "description": "V.A.T.S. melee distance is increased even more, and the farther the Blitz distance, the greater the damage.<strong>(Requires: Level 29)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/386-blitz/"
+    },
+    "10": {
+      "name": "Gun Fu",
+      "ranks": {
+        "1": { "level": 1, "description": "You've learned to apply ancient martial arts to gunplay! Do <strong>25%</strong> more damage to your second V.A.T.S. target and beyond." },
+        "2": { "level": 26, "description": "In V.A.T.S. you do <strong>50%</strong> more damage to your third target and beyond.<strong> (Requires: Level 26)</strong>" },
+        "3": { "level": 50, "description": "In V.A.T.S. you instantly do a Critical Hit against your fourth target and beyond.<strong> (Requires: Level 50)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/408-gun-fu/"
+    }
+  },
+  "l": {
+    "1": {
+      "name": "Fortune Finder",
+      "ranks": {
+        "1": { "level": 1, "description": "You find more bottle caps in containers." },
+        "2": { "level": 5, "description": "You find even more bottle caps in containers. <strong>(Requires: Level 5)</strong>" },
+        "3": { "level": 25, "description": "You find even more bottle caps in containers. <strong>(Requires: Level 25)</strong>" },
+        "4": { "level": 40, "description": "You find even more bottle caps in containers, and there is a chance of enemies exploding into a shower of caps when you kill them.<strong> (Requires: Level 40)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/401-fortune-finder/"
+    },
+    "2": {
+      "name": "Scrounger",
+      "ranks": {
+        "1": { "level": 1, "description": "You find more ammunition in containers." },
+        "2": { "level": 7, "description": "You find even more ammunition in containers. <strong>(Requires: Level 7)</strong>" },
+        "3": { "level": 24, "description": "You find even more ammunition in containers. <strong>(Requires: Level 24)</strong>" },
+        "4": { "level": 37, "description": "There is a chance to gain ammo when firing the last round in your clip <strong>(Requires: Level 37)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/459-scrounger/"
+    },
+    "3": {
+      "name": "Bloody Mess",
+      "ranks": {
+        "1": { "level": 1, "description": "<strong>+5%</strong> bonus damage means enemies will sometimes explode into a gory red paste. Watch out for flying eyeballs!" },
+        "2": { "level": 9, "description": "You now inflict <strong>+10%</strong> damage in combat.<strong> (Requires: Level 9)</strong>" },
+        "3": { "level": 31, "description": "You now inflict <strong>+15%</strong> damage in combat. <strong>(Requires: Level 31)</strong>" },
+        "4": { "level": 41, "description": "When an enemy explodes, nearby enemies may suffer the same fate. <strong>(Requires: Level 47)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/387-bloody-mess/"
+    },
+    "4": {
+      "name": "Mysterious Stranger",
+      "ranks": {
+        "1": { "level": 1, "description": "Who is he? Why does he help? Who cares! The Mysterious Stranger will appear occasionally in V.A.T.S. to lend a hand, with deadly efficiency.." },
+        "2": { "level": 22, "description": "The Mysterious Stranger appears more often in V.A.T.S. <strong>(Requires: Level 22)</strong>" },
+        "3": { "level": 41, "description": "The Mysterious Stranger appears more often in V.A.T.S. When he kills an opponent, there is a chance your Critical meter gets filled. <strong>(Requires: Level 41)</strong>" },
+        "4": { "level": 49, "description": "The Mysterious Stranger appears more often in V.A.T.S. When he kills an opponent, there is a high chance your Critical meter gets filled. <strong>(Requires: Level 49)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/438-mysterious-stranger/"
+    },
+    "5": {
+      "name": "Idiot Savant",
+      "ranks": {
+        "1": { "level": 1, "description": "You're not stupid! Just... different. Randomly receive <strong>3x</strong> XP from any action, and the lower your Intelligence, the greater the chance." },
+        "2": { "level": 11, "description": "You now randomly receive <strong>5x</strong> XP from any action. The lower your Intelligence, the greater the chance. <strong>(Requires: Level 11)</strong>" },
+        "3": { "level": 34, "description": "Randomly receiving bonus XP from any action may trigger <strong>3x</strong> XP for all kills for a short period of time. The lower your Intelligence, the greater the chance. <strong>(Requires: Level 34)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/415-idiot-savant/"
+    },
+    "6": {
+      "name": "Better Criticals",
+      "ranks": {
+        "1": { "level": 1, "description": "Advanced training for enhanced combat effectiveness! Criticals do <strong>50%</strong> more extra damage." },
+        "2": { "level": 15, "description": "Your criticals now do <strong>twice</strong> as much extra damage. <strong>(Requires: Level 15)</strong>" },
+        "3": { "level": 40, "description": "Your criticals now do <strong>2.5x</strong> as much extra damage.<strong> (Requires: Level 40)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/383-better-criticals/"
+    },
+    "7": {
+      "name": "Critical Banker",
+      "ranks": {
+        "1": { "level": 1, "description": "You're a patient battlefield tactician, and can save a Critical Hit, to be used in V.A.T.S. when you need it most." },
+        "2": { "level": 17, "description": "You can now save <strong>2</strong> Critical Hits, to be used in V.A.T.S. when you need them the most.<strong> (Requires: Level 17)</strong>" },
+        "3": { "level": 43, "description": "You can now save <strong>3</strong> Critical Hits, to be used in V.A.T.S. when you need them the most. Banking a Critical has a chance to save an additional Critical.<strong> (Requires: Level 43)</strong>" },
+        "4": { "level": 50, "description": "You can now save <strong>4</strong> Critical Hits, to be used in V.A.T.S. when you need them the most.<strong> (Requires: Level 50)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/398-critical-banker/"
+    },
+    "8": {
+      "name": "Grim Reaper's Sprint",
+      "ranks": {
+        "1": { "level": 1, "description": "Death becomes you! Any kill in V.A.T.S. has a <strong>15%</strong> chance to restore all Action Points." },
+        "2": { "level": 19, "description": "Any kill in V.A.T.S. now has a <strong>25%</strong> chance to restore all Action Points.<strong> (Requires: Level 19)</strong>" },
+        "3": { "level": 46, "description": "Any kill in V.A.T.S. has a <strong>35%</strong> chance to restore all Action Points and refill your Critical meter.<strong> (Requires: Level 46)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/406-grim-reapers-sprint/"
+    },
+    "9": {
+      "name": "Four Leaf Clover",
+      "ranks": {
+        "1": { "level": 1, "description": "Feeling Lucky? You should! Each hit in V.A.T.S. has a chance of filling your Critical meter." },
+        "2": { "level": 13, "description": "Each hit in V.A.T.S. now has an even better chance of filling your Critical meter. <strong>(Requires: Level 13)" },
+        "3": { "level": 32, "description": "Each hit in V.A.T.S. now has a very good chance of filling your Critical meter. <strong>(Requires: Level 32)</strong>" },
+        "4": { "level": 48, "description": "Each hit in V.A.T.S. now has an excellent chance of filling your Critical meter. <strong>(Requires: Level 48)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/402-four-leaf-clover/"
+    },
+    "10": {
+      "name": "Ricochet",
+      "ranks": {
+        "1": { "level": 1, "description": "What goes around comes around! Any enemy's ranged attacks will sometimes ricochet back and instantly kill them. The closer you are to death, the higher the chance." },
+        "2": { "level": 29, "description": "There's an increased chance that an enemy's shot will ricochet back and kill them.<strong> (Requires: Level 29)</strong>" },
+        "3": { "level": 50, "description": "When an enemy's shot ricochets back and kills them, there is a chance your Critical meter gets filled. <strong>(Requires: Level 50)</strong>" }
+      },
+      "url": "/guides/fallout-4/perks/451-ricochet/"
+    }
+  }
+}
